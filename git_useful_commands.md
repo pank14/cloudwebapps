@@ -1,4 +1,4 @@
-# Useful Git Commands A to Z
+########## Useful Git Commands ############## 
 Initialize git repo
 >git init 
 
