@@ -1,5 +1,4 @@
 # Useful Git Commands 
-
 Initialize git repo
 >git init 
 
