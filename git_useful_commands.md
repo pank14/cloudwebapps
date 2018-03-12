@@ -1,14 +1,15 @@
-########## Useful Git Commands ############## 
+# Useful Git Commands 
+
 Initialize git repo
 >git init 
 
 directory now has an empty repository in /.git/. The repository is a hidden directory where Git operates
-
 type the git status command to see what the current state of our project is:
 
 >git status
 
 create text file sample.txt and again run 
+
 >git status
 
 Notice how Git says sample.txt is "untracked"? That means Git sees that  sample.txt is a new file
@@ -17,10 +18,10 @@ we first need to add it to the staging area by using git add.
 >git add sample.txt
 
 Git is now tracking our sample.txt file. Let's run git status again to see where we stand:
+
 >git status
 
 Git says changes to be committed? The files listed here are in the Staging Area, and they are not in our repository yet. We could add or remove files from the stage before we store them in the repository.
-
 To store our staged changes we run the commit command with a message describing what we've changed. Let's do that now by typing:
 
 >git commit -m "Add new sample story"
@@ -42,6 +43,7 @@ We've gone ahead and created a new empty GitHub repository for you to use with T
 
 The push command tells Git where to put our commits when we're ready, and now we're ready. So let's push our local changes to our origin repo (on GitHub).
 The name of our remote is origin and the default local branch name is master. The -u tells Git to remember the parameters, so that next time we can simply run git push and Git will know what to do. Go ahead and push it!
+
 >git push -u origin master
 
 Let's pretend some time has passed. We've invited other people to our GitHub project who have pulled your changes, made their own commits, and pushed them.
